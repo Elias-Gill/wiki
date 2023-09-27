@@ -8,8 +8,10 @@
 
 ## Stand by
 - [portfolio](2023-07-10_portfolio.md)
-- [Walldo](Walldo)
 - [poli_term](2023-04-01_poli_term.md)
+
+## Cerrados (de momento)
+- [Walldo](Walldo)
 
 # Facultad
 nada de momento 
