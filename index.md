@@ -17,7 +17,8 @@
 nada de momento 
 
 # Notas varias
-[conventional Commits](2023-08-29_conventional-commits.md)
+- [conventional Commits](2023-08-29_conventional-commits.md)
+- [Programas facheros de productividad](2023-10-05_programas-facheros-de-productividad.md)]
 
 # Cosas secundarias
 - [nvim_config](2023-08-21_config.md)
