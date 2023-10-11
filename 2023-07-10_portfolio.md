@@ -1,49 +1,91 @@
 # Fonts (como llamarlas desde CSS)
+
 INFO: los titulos tambien son sus nombres de clase CSS
-titulo
-    - font-family: 'Secular One', sans-serif;
-texto
-    - font-family: 'Murecho', sans-serif;
+titulo - font-family: 'Secular One', sans-serif;
+texto - font-family: 'Murecho', sans-serif;
 
-## Tailwind
+# Tailwind
+
 - Para cambiar de fuente: font-<fuente>
-- Para padding: px-...  o  py-...
+- Para padding: px-... o py-...
 
-## Astrojs
+# Astrojs
+
+## Estructura de carpetas en Astro
+
+- En la carpeta _index_ se encuentran todas las paginas que se van a mostrar y astro renderiza de a uno
+- Entiendo que para las paginas que va a tener tu blog metes las paginas dentro de _pages_. Podes poner paginas individuales o podes crear carpetas que son como los _endpoints de una api_. Dentro de esa carpeta Astro busca por el archivo _index.astro_. Para hacer Referencias a estas paginas agregas el nombre del archivo o carpeta en el index (funciona recursivamente, como los _endpoints_ de una API).
+- _BaseHead_ parece ser la metadata del archivo, mejor no tocar la config original de astro.
+- El archivo _[...slug].astro_ se utiliza como comodin (o plantilla) en funcion al url que se proporciona. En este proyecto se esta trayendo todos el contenido dentro de 'content/blog/' utilizando la funcion:
+
+- Dentro de la carpeta donde se crea una nueva coleccion ("content") se debe poner en config.ts la configuracion de la coleccion:
+
+## Sintaxis de astro
+
 - En astro todo lo que esta entre tres guiones (---) es <script></script>
 
-- Entiendo que para las paginas que va a tener tu blog metes las paginas dentro
-de _pages_. Podes poner paginas individuales o podes crear carpetas que son como los _endpoints de una api_. 
-Dentro de esa carpeta Astro busca por el archivo *index.astro*.
+- Los layouts sirven para poder hacer eso, marcos de aplicacion pero cuando usas markdown supongo, son invocados automáticamente por AstroJS. Se encuentran en la carpeta 'layouts'. Dentro de los layouts
+  puedo tener diferentes elementos, de los cuales el mas importante seguro es _<slot />_ el cual se utiliza para inyectar html
+  externo al momento de utilizar el layout.
 
-- Para hacer Referencias a estas paginas agregas el nombre del archivo o carpeta en el index (funciona recursivamente, como los _endpoints_ de una API).
+## Mas importante de Astro
 
-- El archivo _[...slug].astro_ se utiliza como comodin (o plantilla) en funcion al url que se proporciona. En este proyecto se esta trayendo todos el contenido dentro de 'content/blog/' utilizando la funcion:
-```js
+- _RSS_: Astro proporciona una generación rápida y automática de RSS feeds para blogs u otros sitios web con mucho contenido. Los feeds RSS proporcionan una forma fácil para que los usuarios se suscriban a tu contenido. Un feed RSS es una forma de distribuir contenido actualizado a los suscriptores de un sitio web. Permite a los usuarios recibir notificaciones automáticas cuando se publica nuevo contenido en el sitio.
+- Los layouts definen la estructura general de una página y se utilizan para definir cómo se organizan los componentes en una página. Pueden ser utilizados en varias páginas que siguen la misma estructura general, pero con contenido diferente.
+- Los componentes son bloques de construcción reutilizables que se utilizan para construir la UI. Pueden ser utilizados dentro de otros componentes o layouts para construir una UI más avanzada.
+
+### Ejemplo config.ts de content
+```ts
+import { defineCollection, z } from 'astro:content';
+
+const works = defineCollection({
+    // Type-check frontmatter using a schema
+    schema: z.object({
+        title: z.string(),
+        description: z.string(),
+        // Traesform string to Date object
+        pubDate: z.string(),
+        caption: z.string().optional(),
+    }),
+});
+
+export const collections = { trabajos };
+```
+
+### Usage of a collection entry
+
+```astro
+---
+// para plantillas
+type Props = CollectionEntry<'notas'>['data'];
+const { titulo, descripcion } = Astro.props;
+
+// usar dentro del index
+const notas = (await getCollection('notas'))
+---
+```
+
+### ...slug.astro
+```astro
+---
 import { CollectionEntry, getCollection } from 'astro:content';
-import BlogPost from '../../layouts/BlogPost.astro';
+import Note from '../../layouts/Note.astro';
 
 export async function getStaticPaths() {
-    const posts = await getCollection('blog');
-    return posts.map((post) => ({
-        params: { slug: post.slug },
-        props: post,
+    const notas = await getCollection('notas');
+    return notas.map((nota) => ({
+        params: { slug: nota.slug },
+        props: nota,
     }));
 }
-type Props = CollectionEntry<'blog'>;
+type Props = CollectionEntry<'notas'>;
 
 const post = Astro.props;
 const { Content } = await post.render();
-```
-y se le hace referencia nomas ya dentro usando
-```html
-<BlogPost {...post.data}>
-    <h1>{post.data.title}</h1>
-    <Content />
-</BlogPost>
-```
-- BaseHead parece ser la metadata del archivo, mejor no tocar la config original de astro.
+---
 
-- Los layouts sirven para poder hacer eso, marcos de aplicacion pero cuando usas markdown supongo, son invocados automáticamente por AstroJS. Se encuentran en la carpeta 'layouts'. Dentro de los layouts
-puedo tener diferentes elementos, de los cuales el mas importante seguro es _<slot />_ el cual se utiliza para inyectar html
-externo al momento de utilizar el layout.
+<Note {...post.data}>
+<h1>{post.data.titulo}</h1>
+<Content />
+</Note>
+```
