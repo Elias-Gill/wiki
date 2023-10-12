@@ -28,6 +28,32 @@ texto - font-family: 'Murecho', sans-serif;
   puedo tener diferentes elementos, de los cuales el mas importante seguro es _<slot />_ el cual se utiliza para inyectar html
   externo al momento de utilizar el layout.
 
+```astro
+---
+import type { HTMLAttributes } from 'astro/types';
+
+type Props = HTMLAttributes<'a'>;
+
+const { href, class: className, ...props } = Astro.props;
+
+const { pathname } = Astro.url;
+const isActive = href === pathname || href === pathname.replace(/\/$/, '');
+---
+
+<a href={href} class:list={[className, { active: isActive }]} {...props}>
+    <slot />
+</a>
+<style>
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+a.active {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+</style>
+```
 ## Mas importante de Astro
 
 - _RSS_: Astro proporciona una generación rápida y automática de RSS feeds para blogs u otros sitios web con mucho contenido. Los feeds RSS proporcionan una forma fácil para que los usuarios se suscriban a tu contenido. Un feed RSS es una forma de distribuir contenido actualizado a los suscriptores de un sitio web. Permite a los usuarios recibir notificaciones automáticas cuando se publica nuevo contenido en el sitio.
@@ -85,7 +111,7 @@ const { Content } = await post.render();
 ---
 
 <Note {...post.data}>
-<h1>{post.data.titulo}</h1>
-<Content />
+    <h1>{post.data.titulo}</h1>
+    <Content />
 </Note>
 ```
