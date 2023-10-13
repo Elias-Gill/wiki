@@ -20,6 +20,9 @@ texto - font-family: 'Murecho', sans-serif;
 
 - Dentro de la carpeta donde se crea una nueva coleccion ("content") se debe poner en config.ts la configuracion de la coleccion:
 
+### Layout vs components
+Los componentes son nada de 
+
 ## Sintaxis de astro
 
 - En astro todo lo que esta entre tres guiones (---) es <script></script>
