@@ -7,6 +7,7 @@
 - [markdown_simple](2023-08-21_markdown_simple.md)
 - [lector python](mark_simple_py.md)
 - [markdown_parser](2023-09-21_markdown_parser.md)
+- [tauri_reader](2023-10-21_tauri_reader.md)
 
 ## Stand by
 
@@ -23,7 +24,8 @@ nada de momento
 
 # Notas varias
 
-- [conventional Commits](2023-08-29_conventional-commits.md)
+- [Conventional Commits](2023-08-29_conventional-commits.md)
+- [Rust](2023-10-26_about-rust.md)
 - [Programas facheros de productividad](2023-10-05_programas-facheros-de-productividad.md)]
 
 # Cosas secundarias
