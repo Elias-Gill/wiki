@@ -24,44 +24,46 @@
 
 # Pasos para parsear markdown
 
-- [-] Construir un _lexer_ que se encarge de generar una lista de tokens desde un archivo markdown
+- \[-\] Construir un _lexer_ que se encarge de generar una lista de tokens desde un archivo markdown
 
-  - [-] Definir tokens
+  - \[-\] Definir tokens
 
-    - [X] Titulo 1
-    - [X] Titulo 2
-    - [X] Titulo 3
-    - [X] Titulo 4
-    - [X] Titulo 5
-    - [X] Titulo 6
-    - [X] Italics (\_ o \*)
-    - [X] Inline code (`)
-    - [X] Bold (doble \*)
-    - [ ] Separador (triple \*)
-    - [X] Elemento de lista (-, +, \*)
-    - [X] Parrafo (doble salto de linea)
-    - [X] Bloques de codigo (triple `)
+    - \[X\] Titulo 1
+    - \[X\] Titulo 2
+    - \[X\] Titulo 3
+    - \[X\] Titulo 4
+    - \[X\] Titulo 5
+    - \[X\] Titulo 6
+    - \[X\] Italics (\_ o \*)
+    - \[X\] Inline code (\`)
+    - \[X\] Bold (doble \*)
+    - \[ \] Separador (triple \*)
+    - \[X\] Elemento de lista (-, +, \*)
+    - \[X\] Parrafo (doble salto de linea)
+    - \[X\] Bloques de codigo (triple \`)
 
-  - [ ] Escribir las reglas para cada token (con regexes)
-    - [ ] Titulo 1
-    - [ ] Titulo 2
-    - [ ] Titulo 3
-    - [ ] Titulo 4
-    - [ ] Titulo 5
-    - [ ] Titulo 6
-    - [ ] Italics (\_ o \*)
-    - [ ] Inline code (`)
-    - [ ] Bold (doble \*)
-    - [ ] Separador (triple \*)
-    - [ ] Elemento de lista (-, +, \*)
-    - [ ] Parrafo (doble salto de linea)
-    - [ ] Bloques de codigo (triple `)
+  - \[ \] Escribir las reglas para cada token (con regexes)
 
-- [ ] Implementar un _parser_ que se encargue de crear el arbol de sintaxis a partir de la lista suelta de tokens del lexer
+    - \[ \] Titulo 1
+    - \[ \] Titulo 2
+    - \[ \] Titulo 3
+    - \[ \] Titulo 4
+    - \[ \] Titulo 5
+    - \[ \] Titulo 6
+    - \[ \] Italics (\_ o \*)
+    - \[ \] Inline code (\`)
+    - \[ \] Bold (doble \*)
+    - \[ \] Separador (triple \*)
+    - \[ \] Elemento de lista (-, +, \*)
+    - \[ \] Parrafo (doble salto de linea)
+    - \[ \] Bloques de codigo (triple \`)
+
+- \[ \] Implementar un _parser_ que se encargue de crear el arbol de sintaxis a partir de la lista suelta de tokens del lexer
 
   - _TODO_
 
-- [ ] Crear un _renderer_ que trasncriba el arbol de sintaxis en html (en este caso) o en otros formatos si es necesario.
+- \[ \] Crear un _renderer_ que trasncriba el arbol de sintaxis en html (en este caso) o en otros formatos si es necesario.
+
   - _TODO_
 
 # NOTES
@@ -87,9 +89,25 @@ aca poner mis notas
 - `Simbolos No terminales`: Los símbolos no terminales representan las reglas de producción que definen la estructura y la sintaxis del lenguaje. Estos símbolos pueden ser descompuestos en otros símbolos, ya sean terminales o no terminales. Por ejemplo, en el lenguaje de programación C, los símbolos no terminales pueden ser "sentencia", "expresión", "declaración", etc. Estos símbolos no terminales se utilizan para construir la estructura del programa y definir cómo se deben combinar los símbolos terminales.
 
 _Parse Tree_
-> Formally, given a context-free grammar, a parse tree according to the gram­
-> mar is a tree with the following properties: 
-> 1. The root is labeled by the start symbol. 
-> 2. Each leaf is labeled by a terminal or by E. 
-> 3. Each interior node is labeled by a nonterminal. 
 
+> Formally, given a context-free grammar, a parse tree according to the gram­
+> mar is a tree with the following properties:
+>
+> 1. The root is labeled by the start symbol.
+> 1. Each leaf is labeled by a terminal or by E.
+> 1. Each interior node is labeled by a nonterminal.
+
+Info especial de Regexes en _JS_:
+
+```
+The regular expression pattern \\b(${blacklist.join("|")})\\b is composed of several elements:
+
+\\b: This is a word boundary anchor. It matches a position between a word character (as defined by \w) and 
+a non-word character (as defined by \W), or vice versa. Word characters include letters, digits, and underscores.
+
+${blacklist.join("|")}: This is a placeholder that appears to be part of a larger code snippet. 
+It suggests that the pattern will be dynamically generated based on the contents of a blacklist array. 
+The join("|") method joins the elements of the blacklist array with the | symbol as the separator.
+
+\\b: Another word boundary anchor, similar to the first one. 
+```
