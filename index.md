@@ -2,17 +2,17 @@
 
 ## Current work
 
-- [poliAPI](2023-06-16_poliapi.md)
-- [excel parser](2023-07-15_excel-parser.md)
-- [markdown_simple](2023-08-21_markdown_simple.md)
+- [poliAPI](poliapi.md)
+- [excel parser](excel-parser.md)
+- [markdown_simple](markdown_simple.md)
 - [lector python](mark_simple_py.md)
-- [markdown_parser](2023-09-21_markdown_parser.md)
-- [tauri_reader](2023-10-21_tauri_reader.md)
+- [markdown_parser](markdown_parser.md)
+- [tauri_reader](tauri_reader.md)
 
 ## Stand by
 
-- [portfolio](2023-07-10_portfolio.md)
-- [poli_term](2023-04-01_poli_term.md)
+- [portfolio](portfolio.md)
+- [poli_term](poli_term.md)
 
 ## Cerrados (de momento)
 
@@ -24,10 +24,6 @@ nada de momento
 
 # Notas varias
 
-- [Conventional Commits](2023-08-29_conventional-commits.md)
-- [Rust](2023-10-26_about-rust.md)
-- [Programas facheros de productividad](2023-10-05_programas-facheros-de-productividad.md)]
-
-# Cosas secundarias
-
-- [nvim_config](2023-08-21_config.md)
+- [Conventional Commits](conventional-commits.md)
+- [Rust](about-rust.md)
+- [Programas facheros de productividad](programas-facheros-de-productividad.md)]
