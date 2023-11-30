@@ -13,10 +13,9 @@
 
 - [portfolio](portfolio.md)
 - [poli_term](poli_term.md)
+- [Walldo](Walldo)
 
 ## Cerrados (de momento)
-
-- [Walldo](Walldo)
 
 # Facultad
 
