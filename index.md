@@ -2,16 +2,15 @@
 
 ## Current work
 
-- [poliAPI](poliapi.md)
-- [excel parser](excel-parser.md)
-- [markdown_simple](markdown_simple.md)
-- [lector python](mark_simple_py.md)
-- [markdown_parser](markdown_parser.md)
 - [tauri_reader](tauri_reader.md)
+- [markdown_simple](markdown_simple.md)
+- [markdown_parser](markdown_parser.md)
 
 ## Stand by
 
 - [portfolio](portfolio.md)
+- [poliAPI](poliapi.md)
+- [excel parser](excel-parser.md)
 - [poli_term](poli_term.md)
 - [Walldo](Walldo)
 

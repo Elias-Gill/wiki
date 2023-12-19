@@ -1,9 +1,17 @@
 # Dependencias
 
+### Rust
 - [tauri](https://tauri.app/)
 - [svelte](https://svelte.dev/)
 - [markdown parser](https://github.com/kivikakk/comrak)
 - [syntax highlighter](https://github.com/trishume/syntect)
+ 
+### Javascript
+- [higlight.js](https://highlightjs.org/)
+- [file-type icons](https://www.npmjs.com/package/file-icons-js)
+
+# Testing
+- [Mocks tauri](https://tauri.app/v1/guides/testing/mocking)
 
 # Modelo del proyecto
 

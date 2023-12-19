@@ -1,5 +1,4 @@
 # Todo  
-- Hacer que el programa liste los modos disponibles para cambiar el fondo
 - Refactor de logica de conexion de la app, en modulos tal vez
 
 - Anadir dialogos de error
