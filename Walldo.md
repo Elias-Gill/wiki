@@ -1,12 +1,8 @@
 # Todo  
-- Refactor de logica de conexion de la app, en modulos tal vez
-
 - Anadir dialogos de error
-- Cambiar el input de seleccion de carpetas a uno con listas sin tantos problemas
 - Anadir una funcion para abrir el explorador de archivos y seleccionar la carpeta
-
-- Anadir una lista de ignorados (capaz solo accesible desde el json)
-- Refactor del codigo de los dialogos
+- Mover el sistema de configuracion al mio propio
+- Anadir una lista de imagenes ignoradas (capaz solo accesible desde el json)
 
 _TODO_: find a way to change the image name when hovering over a widget
 ```go

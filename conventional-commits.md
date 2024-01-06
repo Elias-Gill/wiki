@@ -31,7 +31,6 @@ If you are working on a project that uses conventional commits, I encourage you 
 ## Aditional resources
 Here are some additional resources that you may find helpful:
 
-Conventional Commits website: https://www.conventionalcommits.org/en/v1.0.0/
-Commitizen documentation: https://commitizen.github.io/cz-cli/
-Writing good commit messages: https://blog.devgenius.io/writing-good-commit-messages-with-conventional-commits-8a40e99da2de
-
+- Conventional Commits website: [https://www.conventionalcommits.org/en/v1.0.0/]
+- Commitizen documentation: [https://commitizen.github.io/cz-cli/]
+- Writing good commit messages: [https://blog.devgenius.io/writing-good-commit-messages-with-conventional-commits-8a40e99da2de]

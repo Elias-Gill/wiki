@@ -1,8 +1,19 @@
+# TODO:
+- Poder mostrar imagenes dentro del html
+- Implementar retroceso de la pagina con el mouse (para poder abrir pags. web directo desde la app y saltar entre archivos)
+- Conversor de markdown a pdf (realmente la opcion que tengo es simplemente abrir el navegador del usuario, o la opcion de guardar solo como html)
+- Vim-Motions porque Vim
+
+# Comandos
+- `npm run test:frontend` test javascript
+- `npm run tauri dev` dev server
+- `npm run tauri build` build
+- `npm run test:backend` test rust
+
 # Dependencias
 
 ### Rust
 - [tauri](https://tauri.app/)
-- [svelte](https://svelte.dev/)
 - [markdown parser](https://github.com/kivikakk/comrak)
 - [syntax highlighter](https://github.com/trishume/syntect)
  

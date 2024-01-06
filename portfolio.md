@@ -64,7 +64,7 @@ a.active {
 - Los componentes son bloques de construcción reutilizables que se utilizan para construir la UI. Pueden ser utilizados dentro de otros componentes o layouts para construir una UI más avanzada.
 
 ### Ejemplo config.ts de content
-```ts
+```typescript
 import { defineCollection, z } from 'astro:content';
 
 const works = defineCollection({
@@ -83,7 +83,7 @@ export const collections = { trabajos };
 
 ### Usage of a collection entry
 
-```astro
+```jsx
 ---
 // para plantillas
 type Props = CollectionEntry<'notas'>['data'];
@@ -95,7 +95,7 @@ const notas = (await getCollection('notas'))
 ```
 
 ### ...slug.astro
-```astro
+```jsx
 ---
 import { CollectionEntry, getCollection } from 'astro:content';
 import Note from '../../layouts/Note.astro';

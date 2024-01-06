@@ -3,7 +3,7 @@
 ## Current work
 
 - [tauri_reader](tauri_reader.md)
-- [markdown_simple](markdown_simple.md)
+- [markdown in java](markdown_simple.md)
 - [markdown_parser](markdown_parser.md)
 
 ## Stand by
@@ -12,7 +12,7 @@
 - [poliAPI](poliapi.md)
 - [excel parser](excel-parser.md)
 - [poli_term](poli_term.md)
-- [Walldo](Walldo)
+- [Walldo](Walldo.md)
 
 ## Cerrados (de momento)
 
@@ -24,4 +24,5 @@ nada de momento
 
 - [Conventional Commits](conventional-commits.md)
 - [Rust](about-rust.md)
-- [Programas facheros de productividad](programas-facheros-de-productividad.md)]
+- [Programas facheros de productividad](programas-facheros-de-productividad.md)
+- [Proyectos is2 para copiar](Proyectos is2 para copiar.md)
