@@ -1,6 +1,6 @@
 # Proyectos para copiar, ejem, inspirarse
 
-- https://github.com/Angatupyry/is2
+- https://github.com/Angatupyry/is2 (leer el readme)
 - https://github.com/ALK222/BanqueoIS2
 - https://github.com/danielgaleano/is2
 - https://github.com/sebassmtz/microservices-IS2
