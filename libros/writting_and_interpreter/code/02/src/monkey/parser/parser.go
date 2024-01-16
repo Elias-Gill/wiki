@@ -8,6 +8,7 @@ import (
 	"strconv"
 )
 
+// operators order of precedence
 const (
 	_ int = iota
 	LOWEST

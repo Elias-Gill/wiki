@@ -1,6 +1,19 @@
+# Encountered problems
+- React icons [incomplatibilities](https://github.com/withastro/astro/issues/7629) in newer versions. Use 4.8.0
+
+## What Should a Back-End Web Developer Portfolio Have?
+- Homepage
+- Skills Page
+- Projects Page
+- Resume
+- Display the Best Projects
+- Create Customized Pages
+- Pay Attention to User Experience
+- Mention the Awards or Special Recognition
+
 # Fonts (como llamarlas desde CSS)
 
-INFO: los titulos tambien son sus nombres de clase CSS
+_INFO_: los titulos tambien son sus nombres de clase CSS
 titulo - font-family: 'Secular One', sans-serif;
 texto - font-family: 'Murecho', sans-serif;
 
@@ -117,4 +130,12 @@ const { Content } = await post.render();
     <h1>{post.data.titulo}</h1>
     <Content />
 </Note>
+```
+
+## Hidratacion
+La hidratacion se puede realizar utilizando las "anotaciones" en los elementos html o react o lo que sea
+que queremos que se carguen de manera "perezosa" en el cliente.
+
+```astro
+<ThemeToggle client:visible/>
 ```
