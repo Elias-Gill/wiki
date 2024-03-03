@@ -2,6 +2,7 @@
 
 ## Current work
 
+- [Interpreter](Interpreter.md)
 - [tauri_reader](tauri_reader.md)
 - [markdown in java](markdown_simple.md)
 - [markdown_parser](markdown_parser.md)
@@ -22,6 +23,7 @@ nada de momento
 
 # Notas varias
 
+- [Mision tecnica Taiwan](./john_correcciones.md)
 - [Conventional Commits](conventional-commits.md)
 - [Rust](about-rust.md)
 - [Programas facheros de productividad](programas-facheros-de-productividad.md)
