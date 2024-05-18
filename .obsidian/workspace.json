@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b63c218df2de02c1",
+        "id": "979ec7a209ec913a",
         "type": "tabs",
         "children": [
           {
-            "id": "0c5a6d29603b251d",
+            "id": "a9a5881f6b0e931d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -62,7 +62,7 @@
             }
           },
           {
-            "id": "b73f51828d229221",
+            "id": "933d4d8c0764c638",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -149,7 +149,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0c5a6d29603b251d",
+  "active": "a9a5881f6b0e931d",
   "lastOpenFiles": [
     "Interpreter.md",
     "mark_simple_py.md",
