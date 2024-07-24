@@ -1,8 +1,0 @@
-~/.config/nvim/..
-  after
-  lua
-  snippets
-   init.lua
-   lazy-lock.json
-   package.json
-   README.md
