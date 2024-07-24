@@ -8,3 +8,11 @@
 - https://github.com/Darthcjba/is2
 - https://github.com/lautroche/IS2
 - https://github.com/fabr0d/ProyectoFinal-IS2
+ 
+# Proyectos con python + htmx
+
+- https://github.com/vaaibhavsharma/djangohtmx
+
+# Librerias interesantes
+
+- [Dashboard templates](https://themeselection.com/item/category/django-admin-template/)

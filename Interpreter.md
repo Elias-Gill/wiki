@@ -10,6 +10,7 @@ Posiblemente la parte mas sencilla (pero no menos hermosa) de nuestro interprete
 
 El lexer genera tokens genericos a partir de un input de palabras. Este input de palabras es dividido en "tokens", los cuales no son mas que expresiones mas 
 sencillas que tienen "valor" por si mismas. Un ejemplo vale mas que mil palabras:
+
 ```txt
 "var input = 123 + 4;" => 
 ["var" VAR]

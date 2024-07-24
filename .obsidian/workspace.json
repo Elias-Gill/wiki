@@ -11,8 +11,10 @@
             "id": "a9a5881f6b0e931d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.12"
+              }
             }
           }
         ]
@@ -62,7 +64,7 @@
             }
           },
           {
-            "id": "933d4d8c0764c638",
+            "id": "425f8d5ac9383a53",
             "type": "leaf",
             "pinned": true,
             "state": {

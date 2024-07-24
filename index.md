@@ -3,7 +3,6 @@
 ## Current work
 
 - [Interpreter](Interpreter.md)
-- [backend](backend.md)
 
 ## Stand by
 
@@ -17,9 +16,10 @@
 
 # Notas varias
 
+- [Proyectos is2 para copiar](Proyectos is2 para copiar.md)
 - [Rust](about-rust.md)
 - [Programas facheros de productividad](programas-facheros-de-productividad.md)
-- [Proyectos is2 para copiar](Proyectos is2 para copiar.md)
 - [Conventional Commits](conventional-commits.md)
-- [Proyectos is2 para copiar](Proyectos is2 para copiar.md)
 - [sequelize](sequelize.md)
+- [htmx](htmx.md)
+- [django](django.md)
