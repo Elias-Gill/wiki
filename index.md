@@ -16,10 +16,11 @@
 
 # Notas varias
 
-- [Proyectos is2 para copiar](Proyectos is2 para copiar.md)
+- [Proyectos_is2](Proyectos_is2.md)
 - [Rust](about-rust.md)
 - [Programas facheros de productividad](programas-facheros-de-productividad.md)
 - [Conventional Commits](conventional-commits.md)
 - [sequelize](sequelize.md)
 - [htmx](htmx.md)
 - [django](django.md)
+- [Vim](vim.md)

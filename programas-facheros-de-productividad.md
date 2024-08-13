@@ -10,8 +10,7 @@
 - yadm
 - git
 - tmux
-- glow
-- peco
+- dragon (drag and drop)
 - gh (github-cli)
 - lynx
 - grim (screenshots de codigo)
@@ -19,5 +18,7 @@
 # Cosas de terminal
 
 **Terminal con markdown**
-- _Diapositivas_: slides(go) + perl-graph-easy
-- _lector_: glow
+- _Diapositivas_:
+  slides(go) + perl-graph-easy (para usar con vim hacer ':.!graph-easy')
+- _lector_:
+  glow

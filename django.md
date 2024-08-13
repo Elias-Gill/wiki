@@ -1,4 +1,8 @@
-[Tutorial oficial de Django](https://docs.djangoproject.com/es/5.0/intro/)
+# Articulos de lectura
+
+- [Tutorial oficial de Django](https://docs.djangoproject.com/es/5.0/intro/)
+- [Implementando roles](https://permify.co/post/rbac-in-django/)
+- [Mas de roles](https://forum.djangoproject.com/t/how-to-create-custom-users-with-different-roles-types/20772)
 
 # Instalacion e inicializacion de proyecto
 
@@ -68,6 +72,16 @@ Para crear la vista podemos simplemente anadir una nueva vista en `views.py` e i
 La función `include()` permite hacer referencia a otros URLconfs.
 Cada vez que Django encuentra `include()` corta cualquier parte de la URL que coincide hasta
 ese punto y envía la cadena restante a la URLconf incluida para seguir el proceso.
+
+```python
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("", include("project.apps.todoApp.urls"))
+]
+```
 
 # Bases de datos y modelos
 
@@ -202,15 +216,17 @@ https://docs.djangoproject.com/es/5.0/intro/tutorial07/
 Para crear nuevas plantillas de las creamos en una carpeta `templates/<app>`: 
 
 ```html
-{% if latest_question_list %}
-<ul>
-    {% for question in latest_question_list %}
-    <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
-    {% endfor %}
-</ul>
-{% else %}
-<p>No polls are available.</p>
-{% endif %}
+{% block content %}
+    {% if latest_question_list %}
+        <ul>
+            {% for question in latest_question_list %}
+                <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No polls are available.</p>
+    {% endif %}
+{% endblock %}
 ```
 
 > Namespace de plantillas
@@ -418,6 +434,7 @@ Para utilizar nuestro estilo:
 
 ```html
 {% load static %}
+{% extends "base.html" %}
 <link rel="stylesheet" href="{% static 'polls/style.css' %}">
 ```
 
@@ -440,3 +457,31 @@ Para mas informacion ver:
 
 - [Aplicaciones reusables](https://docs.djangoproject.com/es/5.0/intro/reusable-apps/)
 - [Un ejemplo de extensiones de terceros](https://pypi.org/project/django-debug-toolbar/)
+
+# Extensiones
+
+## Compressor
+
+Django Compressor es una herramienta para gestionar y optimizar archivos estáticos en
+proyectos Django.
+
+Sus principales funciones son:
+- Minificación:
+  Reduce el tamaño de archivos CSS y JavaScript eliminando espacios en blanco, comentarios y
+  otros caracteres innecesarios.
+- Concatenación:
+  Combina múltiples archivos CSS o JavaScript en uno solo para reducir el número de
+  solicitudes HTTP al servidor, lo que mejora el rendimiento.
+
+```html
+{% load compress %}
+{% compress css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+{% endcompress %}
+```
+
+```html
+{% compress js %}
+<script src="{% static 'js/script.js' %}"></script>
+{% endcompress %}
+```
