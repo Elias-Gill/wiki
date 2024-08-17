@@ -3,6 +3,10 @@
 - [Tutorial oficial de Django](https://docs.djangoproject.com/es/5.0/intro/)
 - [Implementando roles](https://permify.co/post/rbac-in-django/)
 - [Mas de roles](https://forum.djangoproject.com/t/how-to-create-custom-users-with-different-roles-types/20772)
+- [FBV vs CBV](https://spookylukey.github.io/django-views-the-right-way/)
+- [Code standars](https://docs.pylint.org/tutorial.html)
+
+---
 
 # Instalacion e inicializacion de proyecto
 
@@ -44,6 +48,8 @@ Esto generara la siguiente estructura de archivos:
 
 El archivo `manage.py` contiene todos los comandos necesarios para nuestro proyecto con django.
 
+---
+
 ## Creando la primera app
 
 Ahora, cada proyecto puede contar con distintas apps, para crear mas apps se cuenta con el
@@ -64,6 +70,8 @@ Este directorio contiene:
 - Un archivo `views.py` con las vistas
 - Un archivo `tests.py` con los tests para nuestra app
 
+---
+
 ## Creando la primera vista
 
 Para crear la vista podemos simplemente anadir una nueva vista en `views.py` e importarla en
@@ -82,6 +90,8 @@ urlpatterns = [
     path("", include("project.apps.todoApp.urls"))
 ]
 ```
+
+---
 
 # Bases de datos y modelos
 
@@ -136,6 +146,8 @@ class Choice(models.Model):
         return self.choice_text
 ```
 
+---
+
 # Instalar aplicacion
 
 Para indicar a django que nuestra aplicacion `polls` esta instalada, asi podremos correr
@@ -173,6 +185,8 @@ Si queremos inspeccionar el sql generador por las migraciones:
 $ python manage.py sqlmigrate polls 0001
 ```
 
+---
+
 # Sitios administrativos
 
 > Filosofía
@@ -209,6 +223,8 @@ NOTA:
 para customizar el sitio de administrador visitar:
 https://docs.djangoproject.com/es/5.0/intro/tutorial07/
 
+---
+
 # Plantillas y forms
 
 ## Plantillas simples
@@ -241,6 +257,7 @@ Para crear nuevas plantillas de las creamos en una carpeta `templates/<app>`:
 > namespacing them.
 > That is, by putting those templates inside another directory named for the application itself.
 
+
 Para utilizarla dentro de nuestra vista:
 
 ```python
@@ -255,6 +272,8 @@ def index(request):
 
     return HttpResponse(template.render(context, request))
 ```
+
+---
 
 ## Forms
 Un ejemplo de como estructurar un formulario en django (no olvidar el `method`):
@@ -330,6 +349,8 @@ Django cuenta con muchos
 [shorcuts](https://docs.djangoproject.com/en/5.0/topics/http/shortcuts/) para las peticiones
 http, tales como `get_object_or_404()`
 
+---
+
 ## Vistas genericas
 
 Para las operaciones CRUD comunes es mas conveniente utilizar las vistas genericas, las cuales
@@ -382,6 +403,8 @@ Solo debemos heredar de las vistas genericas, las cuales pueden ser:
  
 Para mas informacion https://docs.djangoproject.com/es/5.0/topics/class-based-views/
 
+---
+
 # Testing
 
 Dentro del archivo `tests.py` podemos colocar nuestros tests:
@@ -410,6 +433,8 @@ Para correr nuestros tests:
 ```bash
 python manage.py test polls
 ```
+
+---
 
 # Estilos y archivos estaticos
 
@@ -448,6 +473,8 @@ La etiqueta de plantilla `{% static %}` genera la URL absoluta de los archivos e
 > you can change STATIC_URL (used by the static template tag to generate its URLs) without having
 > to modify a bunch of paths in your static files as well.
 
+---
+
 # Extensibilidad y cosas avanzadas
 
 Como nota final DJango es tremendamente extensible, lo cual se puede realizar facilmente para
@@ -457,6 +484,8 @@ Para mas informacion ver:
 
 - [Aplicaciones reusables](https://docs.djangoproject.com/es/5.0/intro/reusable-apps/)
 - [Un ejemplo de extensiones de terceros](https://pypi.org/project/django-debug-toolbar/)
+
+---
 
 # Extensiones
 
@@ -484,4 +513,25 @@ Sus principales funciones son:
 {% compress js %}
 <script src="{% static 'js/script.js' %}"></script>
 {% endcompress %}
+```
+
+# Extending user authentication
+
+Para extender el sistema de autenticacion de Django, se puede utilizar:
+
+```python
+from django.db import models
+from django.contrib.auth.models import AbstractUser
+
+class User(AbstractUser):
+    bio = models.TextField(max_length=500, blank=True)
+    location = models.CharField(max_length=30, blank=True)
+    birth_date = models.DateField(null=True, blank=True)
+```
+
+Luego se modifica el archivo `settings.py` y ya podemos utilizar el mecanismo de Django de
+autenticacion:
+
+```python
+AUTH_USER_MODEL = 'core.User'
 ```

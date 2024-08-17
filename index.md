@@ -3,6 +3,7 @@
 ## Current work
 
 - [Interpreter](Interpreter.md)
+- [Proyecto_is2](~/Proyectos/python_projects/is2/wiki/Home.md)
 
 ## Stand by
 
@@ -16,7 +17,6 @@
 
 # Notas varias
 
-- [Proyectos_is2](Proyectos_is2.md)
 - [Rust](about-rust.md)
 - [Programas facheros de productividad](programas-facheros-de-productividad.md)
 - [Conventional Commits](conventional-commits.md)
