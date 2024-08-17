@@ -4,7 +4,7 @@
 DIR="."
 
 # List all files except index.md and clean.sh
-FILES=$(ls $DIR | grep -v -E "index.md|clean.sh")
+FILES=$(ls $DIR | grep -v -E "index.md|clean.sh|push.sh")
 
 # Create a list to store files to delete
 TO_DELETE=()
