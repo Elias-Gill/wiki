@@ -246,3 +246,7 @@ Use external command to add the Table to Your Cheatsheet
 cheat -c nvim_sr             -----> Use Custom Cheatsheet
 ```
 
+---
+# Links
+
+- https://yutkat.github.io/my-neovim-pluginlist/

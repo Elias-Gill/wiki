@@ -6,6 +6,7 @@
 - bat
 - fzf
 - eza (ls replacement)
+- Delta (better diff tool)
 - yazi o ranger
 - yadm
 - git

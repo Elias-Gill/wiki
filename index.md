@@ -24,3 +24,7 @@
 - [htmx](htmx.md)
 - [django](django.md)
 - [Vim](vim.md)
+
+- [ ] Solucionar emojis en is2
+- [ ] Eliminar templates inncesarias en el html
+- [ ] Cambiar el tema de las senhales de migracion
