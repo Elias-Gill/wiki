@@ -25,6 +25,15 @@
 - [django](django.md)
 - [Vim](vim.md)
 
-- [ ] Solucionar emojis en is2
-- [ ] Eliminar templates inncesarias en el html
-- [ ] Cambiar el tema de las senhales de migracion
+# Links
+- [Hidrodinamica para simulacion de fluidos](https://en.wikipedia.org/wiki/Smoothed-particle_hydrodynamics)
+- [Representacion de graficos en ascii](https://en.wikipedia.org/wiki/Marching_squares)
+
+# Proyecto is2
+
+### Estadisticas necesarias
+
+- Autor : Cantidad de contenidos publicados, cantidad de contenidos suyos en lista de favoritos
+- Editor : Cantidad de contenidos moderados o editados como se diga
+- Publicador: Cantidad de contenidos publicados y rechazados
+- Suscriptor: Cantidad de contenidos vistos

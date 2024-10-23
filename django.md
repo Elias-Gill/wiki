@@ -351,9 +351,7 @@ http, tales como `get_object_or_404()`
 
 ---
 
-## Vistas genericas
-
-Para las operaciones CRUD comunes es mas conveniente utilizar las vistas genericas, las cuales
+#Para las operaciones CRUD comunes es mas conveniente utilizar las vistas genericas, las cuales
 son autogeneradas por django mediante el modelo, por lo cual no hace falta escribir formularios
 repetitivos para realizar dichas operaciones.
 

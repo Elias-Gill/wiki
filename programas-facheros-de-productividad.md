@@ -1,5 +1,4 @@
 # Cosas que descargar con instalacion desde 0
-
 - neovim
 - ripgrep
 - fd
@@ -15,6 +14,7 @@
 - gh (github-cli)
 - lynx
 - grim (screenshots de codigo)
+- maim (screenshots de i3)
 
 # Cosas de terminal
 
