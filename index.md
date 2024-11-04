@@ -15,9 +15,23 @@
 - [Walldo](Walldo.md)
 - [tauri_reader](tauri_reader.md)
 
+## Ideas para nuevos proyectos
+
+- Git graph viewer para terminal (y capaz una gui dedicada)
+- Subset de funcionalidades de git
+- Una mini-bd
+- Un compilador (de los de verdad)
+- Editor de codigo simple
+- Simple spreadshit (como "sc-im" aka "sc")
+- Implementacion del algoritmo de Mayers (diff de cadenas)
+- Imagen a ASCII (extra:
+  aplicacion de mascaras y cosas de gauss como hizo "acerola")
+- E-commerce o ERP
+
 # Notas varias
 
 - [Rust](about-rust.md)
+- [Zig](zig.md)
 - [Programas facheros de productividad](programas-facheros-de-productividad.md)
 - [Conventional Commits](conventional-commits.md)
 - [sequelize](sequelize.md)
@@ -26,14 +40,6 @@
 - [Vim](vim.md)
 
 # Links
-- [Hidrodinamica para simulacion de fluidos](https://en.wikipedia.org/wiki/Smoothed-particle_hydrodynamics)
-- [Representacion de graficos en ascii](https://en.wikipedia.org/wiki/Marching_squares)
 
-# Proyecto is2
-
-### Estadisticas necesarias
-
-- Autor : Cantidad de contenidos publicados, cantidad de contenidos suyos en lista de favoritos
-- Editor : Cantidad de contenidos moderados o editados como se diga
-- Publicador: Cantidad de contenidos publicados y rechazados
-- Suscriptor: Cantidad de contenidos vistos
+- [Hidrodinamica para simulacion de fluidos](https://en.wikipedia.org/wiki/Smoothed-particle_hydrodynamics)
+- [Marching squares para "graficos en ascii"](https://en.wikipedia.org/wiki/Marching_squares)
