@@ -39,7 +39,15 @@
 - [django](django.md)
 - [Vim](vim.md)
 
-# Links
+# Links papers y libros
 
 - [Hidrodinamica para simulacion de fluidos](https://en.wikipedia.org/wiki/Smoothed-particle_hydrodynamics)
-- [Marching squares para "graficos en ascii"](https://en.wikipedia.org/wiki/Marching_squares)
+- [Marching squares para "graficos en ascii"](https://en.wikipedia.org/wiki/Marching_squares)
+- [Jos Stam fluid simulation explanation](https://www.youtube.com/watch?v=qsYE1wMEMPA)
+
+# Links librerias
+- [UnoCss](https://unocss.dev/)
+
+anadir un script que recibe un tag para que deploye todo solo
+descargando el repo con ese tag, configurar nginx con unicord, la db, hacer las migraciones
+y despues levantar el server.
