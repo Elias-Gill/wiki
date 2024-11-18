@@ -18,6 +18,7 @@
 ## Ideas para nuevos proyectos
 
 - Git graph viewer para terminal (y capaz una gui dedicada)
+- Compresor de archivos
 - Subset de funcionalidades de git
 - Una mini-bd
 - Un compilador (de los de verdad)
