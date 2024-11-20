@@ -46,9 +46,10 @@
 - [Marching squares para "graficos en ascii"](https://en.wikipedia.org/wiki/Marching_squares)
 - [Jos Stam fluid simulation explanation](https://www.youtube.com/watch?v=qsYE1wMEMPA)
 
-# Links librerias
-- [UnoCss](https://unocss.dev/)
+# Links y librerias
+- [Uno Css](https://unocss.dev/)
+- [Tachyons css](https://tachyons.io/#getting-started)
+- [Random](random.md)
 
-anadir un script que recibe un tag para que deploye todo solo
-descargando el repo con ese tag, configurar nginx con unicord, la db, hacer las migraciones
-y despues levantar el server.
+anadir un script que recibe un tag para que deploye todo solo descargando el repo con ese tag,
+configurar nginx con unicord, la db, hacer las migraciones y despues levantar el server.
