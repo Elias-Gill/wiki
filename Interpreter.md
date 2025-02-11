@@ -1,6 +1,6 @@
 # TODO's
 - [x] Solucionar la lectura de archivos para la evaluacion
-- [ ] Solucionar el problema de parsear llamadas a funciones sin argumentos
+- [ ] Solucionar el problema de parsear llamadas a funcines sin argumentos
 
 # "Making an interpreter in Go" de Thorsten Ball
 Un interprete cuenta con 3 partes escenciales: el lexer (tokenizer), el parser y el interprete.

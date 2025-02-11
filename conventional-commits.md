@@ -93,8 +93,8 @@ It will make your project easier to maintain and understand for everyone involve
 Here are some additional resources that you may find helpful:
 
 - Conventional Commits website:
-  [https://www.conventionalcommits.org/en/v1.0.0/]
+  [https://www.conventionalcommits.org/en/v1.0.0/](https://www.conventionalcommits.org/en/v1.0.0/)
 - Commitizen documentation:
-  [https://commitizen.github.io/cz-cli/]
+  [https://commitizen.github.io/cz-cli/](https://commitizen.github.io/cz-cli/)
 - Writing good commit messages:
-  [https://blog.devgenius.io/writing-good-commit-messages-with-conventional-commits-8a40e99da2de]
+  [https://blog.devgenius.io/writing-good-commit-messages-with-conventional-commits-8a40e99da2de](https://blog.devgenius.io/writing-good-commit-messages-with-conventional-commits-8a40e99da2de)
