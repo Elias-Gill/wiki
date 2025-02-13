@@ -20,6 +20,8 @@ Date: 12-12-2024
 - [Walldo](Walldo.md)
 - [tauri_reader](tauri_reader.md)
 
+![imagen](./media/code_snippet.jpg)
+
 ## Ideas para nuevos proyectos
 
 - Git graph viewer para terminal (y capaz una gui dedicada)
