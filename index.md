@@ -20,8 +20,6 @@ Date: 12-12-2024
 - [Walldo](Walldo.md)
 - [tauri_reader](tauri_reader.md)
 
-![imagen](./media/code_snippet.jpg)
-
 ## Ideas para nuevos proyectos
 
 - Git graph viewer para terminal (y capaz una gui dedicada)
@@ -40,6 +38,7 @@ Date: 12-12-2024
 # Notas varias
 
 - [Rust](about-rust.md)
+- [C](c.md)
 - [Java](java.md)
 - [Zig](zig.md)
 - [Programas facheros de productividad](programas-facheros-de-productividad.md)
