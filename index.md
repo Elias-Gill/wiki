@@ -8,15 +8,14 @@ Date: 12-12-2024
 
 ## Current work
 
-- [yt_player](yt_player.md)
-- [portfolio](portfolio.md)
-- [Tres en raya](tres_en_raya.md)
+- [poliplanner](poliplanner.md)
 
 ## Stand by
 
+- [yt_player](yt_player.md)
+- [portfolio](portfolio.md)
+- [Tres en raya](tres_en_raya.md)
 - [Interpreter](Interpreter.md)
-- [poliAPI](poliapi.md)
-- [poli_term](poli_term.md)
 - [Walldo](Walldo.md)
 - [tauri_reader](tauri_reader.md)
 
@@ -49,14 +48,9 @@ Date: 12-12-2024
 - [springboot](springboot.md)
 - [Vim](vim.md)
 
-# Links de tutoriales y  librerias
-
-- [Uno Css](https://unocss.dev/)
-- [Random](random.md)
-- [Dart](https://dart.dev/language)
-
-# Papers y libros
+# Papers, articulos y libros
 
 - [Hidrodinamica para simulacion de fluidos](https://en.wikipedia.org/wiki/Smoothed-particle_hydrodynamics)
 - [Marching squares para "graficos en ascii"](https://en.wikipedia.org/wiki/Marching_squares)
 - [Jos Stam fluid simulation explanation](https://www.youtube.com/watch?v=qsYE1wMEMPA)
+- [microservice-testing](https://martinfowler.com/articles/microservice-testing/?utm_source=chatgpt.com)
