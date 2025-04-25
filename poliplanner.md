@@ -1,15 +1,9 @@
 # TODO
 
-Dev experience:
-- Hacer un comando para cargar en una db de desarrollo el csv de pruebas que tengo
-- Hacer que el application.properties use variables de entorno
-- Agregar un .env para las variables de entorno
-
 Manejo de usuarios:
-- Operaciones crud de usarios
-- Inicio de sesion de usuarios
-- test sobre usuarios
-- frontend para inicio de sesion
+- Verificar operaciones crud sobre usuarios
+- Anadir suit de test sobre usuarios
+- Mejorar el frontend para inicio de sesion y register
 
 Creacion de horarios:
 - Crear horario nuevo
@@ -22,3 +16,6 @@ Creacion de horarios:
 
 Calculadora:
 - Frontend de calculadora de puntaje
+
+Dev experience:
+- Completado
