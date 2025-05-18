@@ -3,7 +3,6 @@
 Manejo de usuarios:
 - Verificar operaciones crud sobre usuarios
 - Anadir suit de test sobre usuarios
-- Mejorar el frontend para inicio de sesion y register
 
 Creacion de horarios:
 - Crear horario nuevo
@@ -19,3 +18,7 @@ Calculadora:
 
 Dev experience:
 - Completado
+
+# Ideas de features
+
+- Calculadora de notas pero que te permite ir cargando examenes y tareas, y te calcula todo solo

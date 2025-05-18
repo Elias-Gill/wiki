@@ -8,6 +8,7 @@ Date: 12-12-2024
 
 ## Current work
 
+- [tp compiladores](compiladores.md)
 - [poliplanner](poliplanner.md)
 
 ## Stand by
@@ -45,7 +46,6 @@ Date: 12-12-2024
 - [sequelize](sequelize.md)
 - [htmx](htmx.md)
 - [django](django.md)
-- [springboot](springboot.md)
 - [Vim](vim.md)
 
 # Papers, articulos y libros
