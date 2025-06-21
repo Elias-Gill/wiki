@@ -8,7 +8,8 @@ Date: 12-12-2024
 
 ## Current work
 
-- [tp compiladores](compiladores.md)
+- [tp PDI](pdi.md)
+- [Tp Blockchain](compiladores.md)
 - [poliplanner](poliplanner.md)
 
 ## Stand by
@@ -47,6 +48,7 @@ Date: 12-12-2024
 - [htmx](htmx.md)
 - [django](django.md)
 - [Vim](vim.md)
+- [juegos a comprar](juegos a comprar.md)
 
 # Papers, articulos y libros
 
