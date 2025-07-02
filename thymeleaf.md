@@ -1,6 +1,7 @@
 ## 🧩 1. **Atributo central**
 
-Todos los atributos de Thymeleaf comienzan con `th:` y reemplazan o complementan el HTML estático.
+Todos los atributos de Thymeleaf comienzan con `th:` y reemplazan o complementan el HTML
+estático.
 
 ## 📝 2. **Expresiones**
 
@@ -26,36 +27,35 @@ Thymeleaf soporta distintas expresiones, similares a SpEL:
 <span th:text="${user.name}"></span>
 ```
 
-\| `th:utext`      | Igual que `th:text`, pero sin escape (renderiza HTML).
-\| `th:value`      | Establece el valor de un input, textarea, etc.
-\| `th:href`       | Establece el `href` de un enlace.
-\| `th:src`        | Establece el `src` de una imagen.
-\| `th:each`       | Bucle `for`.
+>| `th:utext`      | Igual que `th:text`, pero sin escape (renderiza HTML).
+>| `th:value`      | Establece el valor de un input, textarea, etc.
+>| `th:href`       | Establece el `href` de un enlace.
+>| `th:src`        | Establece el `src` de una imagen.
+>| `th:each`       | Bucle `for`.
 
 ```html
 <tr th:each="user : ${users}">...</tr>
 ```
 
-\| `th:if` / `th:unless` | Condicionales.
+>| `th:if` / `th:unless` | Condicionales.
 
 ```html
 <div th:if="${user.admin}">Es admin</div>
 ```
 
-\| `th:switch`, `th:case` | Switch case estilo Java.
-\| `th:classappend` | Agrega clases condicionalmente.
+>| `th:switch`, `th:case` | Switch case estilo Java.\| `th:classappend` | Agrega clases condicionalmente.
 
 ```html
 <div th:classappend="${user.active} ? 'active' : 'inactive'"></div>
 ```
 
-\| `th:attr` | Modifica varios atributos al mismo tiempo.
+>| `th:attr` | Modifica varios atributos al mismo tiempo.
 
 ```html
 <img th:attr="src=${user.avatar}, title=${user.name}" />
 ```
 
-\| `th:object` | Define el objeto base para formularios (`*{}` se refiere a él).
+>| `th:object` | Define el objeto base para formularios (`*{}` se refiere a él).
 
 ```html
 <form th:object="${user}" th:action="@{/save}" method="post">
@@ -63,7 +63,7 @@ Thymeleaf soporta distintas expresiones, similares a SpEL:
 </form>
 ```
 
-\| `th:field` | Bindea automáticamente el valor, el `id`, `name`, etc.
+>| `th:field` | Bindea automáticamente el valor, el `id`, `name`, etc.
 
 ## 📄 4. **Formularios**
 
@@ -132,7 +132,8 @@ Ejemplo:
 
 > `Could not bind form errors using expression "*"`
 
-**Solución**: asegúrate de tener un `th:object` dentro del `<form>`, por ejemplo:
+**Solución**:
+asegúrate de tener un `th:object` dentro del `<form>`, por ejemplo:
 
 ```html
 <form th:action="@{/signup}" th:object="${userForm}" method="post">

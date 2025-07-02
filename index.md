@@ -39,6 +39,7 @@
 - [C](c.md)
 - [Java](java.md)
 - [Zig](zig.md)
+- [mobile](mobile.md)
 
 ### Tecnologia
 - [sequelize](sequelize.md)

@@ -5,6 +5,7 @@ Manejo de usuarios:
 - Anadir suit de test sobre usuarios
 
 Creacion de horarios:
+- Solucionar mostrar horarios en la pagina de inicio
 - Crear horario nuevo
 - Actualizacion de horario
 - Frontend de creacion de horarios
@@ -19,6 +20,15 @@ Calculadora:
 Dev experience:
 - Completado
 
+# BUGS
+
+- Se pueden acceder a horarios ajenos poniendo el id
+- Se pueden modifcar horarios ajenos poniendo el id
+- Guardar las fechas como formato parseado (o hacerlo en el frontend) y limpio, porque hay
+  fechas que una basura la facu y por ejemplo aparece "15:00:00 hs" y otros "08:00hs", no tiene
+  sentido.
+
 # Ideas de features
 
-- Calculadora de notas pero que te permite ir cargando examenes y tareas, y te calcula todo solo
+- Calculadora de notas pero que te permite ir cargando examenes y tareas, y te calcula todo
+  solo

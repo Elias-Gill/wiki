@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "979ec7a209ec913a",
+        "id": "32c61cd43d945abb",
         "type": "tabs",
         "children": [
           {
-            "id": "a9a5881f6b0e931d",
+            "id": "7e44c0b274651b40",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.5.12"
-              }
+                "file": "index.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -36,8 +40,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -52,7 +59,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -60,25 +69,28 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           },
           {
-            "id": "425f8d5ac9383a53",
+            "id": "11890c8f0513195b",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "com.maxymillion.zen",
               "state": {},
-              "pinned": true
+              "pinned": true,
+              "icon": "eye",
+              "title": "Zen"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "bd4bc68f77451903",
@@ -94,6 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +114,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for index"
             }
           },
           {
@@ -110,9 +125,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from index"
             }
           },
           {
@@ -122,8 +140,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -131,7 +153,14 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of index"
             }
           }
         ]
@@ -151,11 +180,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a9a5881f6b0e931d",
+  "active": "7e44c0b274651b40",
   "lastOpenFiles": [
+    "java.md",
+    "thymeleaf.md",
+    "index.md",
+    "yt_player.md",
+    "vim.md",
+    "sequelize.md",
+    "springboot.md",
+    "tauri_reader.md",
+    "juego_naves.md",
     "Interpreter.md",
     "mark_simple_py.md",
-    "index.md",
     "2023-09-21_markdown_parser.md"
   ]
 }
