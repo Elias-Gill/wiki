@@ -1,3 +1,10 @@
+---
+Date: 2024-09-22
+Title: Conventional Commits
+Description: Pagina de index de la wiki
+Image: code_snippet.jpg
+---
+
 # WIKI PERSONAL
 
 ## Proyectos
@@ -56,6 +63,7 @@
 - [Marching squares para "graficos en ascii"](https://en.wikipedia.org/wiki/Marching_squares)
 - [Jos Stam fluid simulation explanation](https://www.youtube.com/watch?v=qsYE1wMEMPA)
 - [microservice-testing](https://martinfowler.com/articles/microservice-testing/?utm_source=chatgpt.com)
+- [Repo game engine in C](https://github.com/jdah/doomenstein-3d)
  
 ## Notas nqv
 - [juegos a comprar](juegos a comprar.md)
