@@ -11,9 +11,8 @@ Image: code_snippet.jpg
 
 ### Current work
 
-- [tp PDI](pdi.md)
-- [Tp Blockchain](compiladores.md)
 - [poliplanner](poliplanner.md)
+- [App android](project_tracker.md)
 
 ### Stand by
 
@@ -63,7 +62,7 @@ Image: code_snippet.jpg
 - [Marching squares para "graficos en ascii"](https://en.wikipedia.org/wiki/Marching_squares)
 - [Jos Stam fluid simulation explanation](https://www.youtube.com/watch?v=qsYE1wMEMPA)
 - [microservice-testing](https://martinfowler.com/articles/microservice-testing/?utm_source=chatgpt.com)
-- [Repo game engine in C](https://github.com/jdah/doomenstein-3d)
+- [Repo game engine in C](https://github.com/jdah/doomenstein-3d)
  
 ## Notas nqv
 - [juegos a comprar](juegos a comprar.md)
