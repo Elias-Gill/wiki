@@ -1,8 +1,6 @@
 ---
-Date: 2024-09-22
-Title: Conventional Commits
+Title: Indice
 Description: Pagina de index de la wiki
-Image: code_snippet.jpg
 ---
 
 # WIKI PERSONAL
@@ -12,7 +10,7 @@ Image: code_snippet.jpg
 ### Current work
 
 - [poliplanner](poliplanner.md)
-- [App android](project_tracker.md)
+- [App android](app_android.md)
 
 ### Stand by
 

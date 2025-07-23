@@ -35,13 +35,13 @@ Cada "mini proyecto" tendrá:
 
 ```plaintext
 Inicio (Listado de proyectos)
-└── Crear nuevo proyecto
-    └── Ver proyecto
-├── Objetivos
-├── Bitácora
-├── Recursos
-└── Estadísticas
-    └── Configuración (sincronización / exportación)
+ ├── Crear nuevo proyecto
+ ├── Configuración (sincronización / exportación)
+ └── Ver proyecto
+      ├── Objetivos
+      ├── Bitácora
+      ├── Recursos
+      └── Estadísticas
 ```
 
 ### Flujo resumido típico:
@@ -169,3 +169,92 @@ Recomendado:
 * `/projects/:id`
 * Desde app:
   Retrofit / Volley para consumir.
+
+# 📲 Dónde usar `Intents` en tu proyecto
+
+## 1️⃣ **Notificaciones (Imprescindible usar Intents)**
+
+Cuando envías una notificación:
+
+* Se define un `PendingIntent` para abrir la app o una vista específica (por ejemplo, abrir
+  directamente el proyecto donde falta avanzar).
+* Es la forma oficial para que la notificación "salte" a tu app.
+
+---
+
+## 2️⃣ **Editor Externo para Notas (Markdown)**
+
+Si quieres evitar escribir tu propio editor rich-text/markdown, puedes usar un
+`Intent.ACTION_EDIT` para lanzar editores externos que soporten `.md` (aunque depende de las
+apps que tenga instaladas el usuario).
+
+**Ejemplo:**
+
+```kotlin
+val intent = Intent(Intent.ACTION_EDIT).apply {
+setDataAndType(Uri.parse("file://path/to/note.md"), "text/markdown")
+}
+startActivity(intent)
+```
+
+**Problema:** No todos los usuarios tienen apps que soporten esto.
+Y si tu app es más completa, mejor incluyes un simple editor de texto plano (con soporte de
+markdown básico como preview).
+
+---
+
+## 3️⃣ **Compartir Recursos / Notas**
+
+Si quieres que el usuario comparta:
+
+* Una nota en texto plano.
+* Un reporte en PDF.
+* Un enlace relacionado.
+
+Usarías `Intent.ACTION_SEND`.
+
+```kotlin
+val sendIntent = Intent().apply {
+action = Intent.ACTION_SEND
+putExtra(Intent.EXTRA_TEXT, "Mira mi progreso en este proyecto: ...")
+type = "text/plain"
+}
+startActivity(Intent.createChooser(sendIntent, null))
+```
+
+---
+
+## 4️⃣ **Abrir Links / Recursos Externos**
+
+Si el usuario guarda un enlace o archivo como recurso, usarías `Intent.ACTION_VIEW` para que lo
+abra:
+
+* Navegador web
+* PDF viewer
+* App de archivos
+
+```kotlin
+val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://ejemplo.com"))
+startActivity(intent)
+```
+
+---
+
+## 5️⃣ **Sincronización Manual (opcional)**
+
+Podrías usar `IntentService` si quieres practicar con background workers para simular la
+sincronización local, aunque con `WorkManager` es lo moderno.
+
+---
+
+## 🧑‍💻 Recomendación realista para tu caso:
+
+| Función         | Usar Intent Externo | Mejor In-App |
+| --------------- | ------------------- | ------------ |
+| Notificaciones  | ✅ Obligatorio       | -            |
+| Editar Markdown | ❓ Si quieres probar | ✅ Más seguro |
+| Compartir Notas | ✅ Acción natural    | -            |
+| Abrir Recursos  | ✅ Acción natural    | -            |
+| Background Sync | WorkManager mejor   | -            |
+
+---
