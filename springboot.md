@@ -360,3 +360,47 @@ public class WebSecurityConfig {
         }
 }
 ```
+
+# Inyeccion de dependencias de spring
+
+## 1️⃣ Búsqueda de constructores
+
+Cuando Spring necesita crear un bean:
+
+* Escanea la clase para encontrar **constructores públicos** (y a veces protegidos si se
+  permite).
+* Identifica si alguno está anotado con `@Autowired`.
+
+  * Si hay **exactamente uno** con `@Autowired`, usa ese, aunque haya otros disponibles.
+* Si **ninguno** tiene `@Autowired`:
+
+  * Si hay **un único constructor** (aunque tenga parámetros), lo usa.
+  * Si hay **más de uno**, Spring intenta elegir uno cuyos parámetros pueda resolver **sin
+    ambigüedad**.
+
+    * Si encuentra más de uno posible → lanza error (`NoUniqueBeanDefinitionException`).
+
+### 2️⃣ Cómo resuelve los parámetros
+
+Para cada parámetro del constructor:
+
+* Busca un bean del mismo **tipo** en el contexto de Spring.
+* Si hay **exactamente uno**, lo inyecta.
+* Si hay varios candidatos:
+
+  * Usa `@Qualifier` o el nombre del parámetro para decidir.
+  * Si sigue sin poder decidir → error.
+* Si no hay ningún bean compatible → error (`NoSuchBeanDefinitionException`).
+
+### 3️⃣ Reglas especiales
+
+* Si hay **constructor sin parámetros** y otro con parámetros, Spring normalmente prefiere el
+  **con parámetros** si puede satisfacerlo.
+* `@Autowired(required = false)` permite que el constructor se use incluso si faltan beans
+  (pero no es muy común en constructores).
+* La elección de constructor ocurre **en tiempo de creación del bean**, no en tiempo de
+  compilación.
+
+**Resumido en una frase:** Spring intenta usar el constructor más “rico” (con más dependencias)
+que pueda completar con los beans disponibles, prefiriendo uno marcado con `@Autowired`, y si
+no hay ninguno claro, lanza error.

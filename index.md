@@ -8,7 +8,6 @@ Description: Pagina de index de la wiki
 ## Proyectos
 
 ### Current work
-
 - [poliplanner](poliplanner.md)
 - [App android](app_android.md)
 
@@ -49,6 +48,7 @@ Description: Pagina de index de la wiki
 - [sequelize](sequelize.md)
 - [htmx](htmx.md)
 - [django](django.md)
+- [Curso ESP32 iot](https://www.luisllamas.es/curso-esp8266-esp32/)
 
 ### Varios
 - [Programas facheros de productividad](programas-facheros-de-productividad.md)
@@ -64,3 +64,4 @@ Description: Pagina de index de la wiki
  
 ## Notas nqv
 - [juegos a comprar](juegos a comprar.md)
+- [Pasajes](pasajes.md)
