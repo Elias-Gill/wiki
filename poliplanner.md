@@ -1,36 +1,65 @@
-# TODO
+# DOCUMENTO PERSONAL DE NOTAS PARA POLIPLANNER
 
-[notas del parser](poliplanner_parser.md)
+CURRENT WORK:
+- [ROADMAP para poder hacer la migracion masiva de la db](poliplanner_db_migration.md)
+- [Tests de usos de memoria y demas](test_memoria_poliplanner.md)
 
 FIX:
-- Boton de eliminar materia en formulario de nuevo horario
-- [?] `Fix` Notificaciones de nuevo excel disponible para que no sean tan molestas
-- [ ] Ver el caso donde en el excel no estan puestas las casillas de "aula".
-  Mejor simplemente tener dos versiones del DTO.
-  No deberia de ser tan complicado ver cual version usar dependiendo de la estructura del csv.
-- [?] Error con IS2 que me mostro Zinri al usar la herramienta de migracion.
-- Asignaturas con el mismo nombre pero de diferente carrera se pueden mezclar en la migration
-  tool.
+Ver que hacer con las materias de IEK, LGH y LCIK, porque tienen enfasis
 
-RE-INGENIERIA:
-- [x] Reescritura completa del parser.
-    * [x] Limpiador de encabezados del CSV (para que no importe si no me mueven una casilla)
-    * [x] Que se peudan extraer las columnas de manera dinamica (por ejemplo si no ponen AULA)
-- [ ] Usar la BD que me pasaron como Metadata, especialmente para los semestres.
-- [ ] Ver para dejar de depender de Gnumeric
+CONTINUAR: 
+- Primero revisar bien exhaustivamente lo que ya tengo que es el proceso hasta el step 2.
+  Ver bien para meter peticiones con HTMX, mostrar mensajes al usuario, redireccion, logs, error
+  handling, estructura del codigo, helpers y demas. 
+- Ponerme a corregir el tema del selector de temas, el tema, el css del main layout
+  y demas. Mejor corregir ahora que hay pocas cosas que despues cuando ya sea todo un quilombo
+  de cambiar
+- Finalmente continuar con los pasos 3 y 4 (secciones y confirmacion)
 
-REFACTOR:
-- [ ] Ver si usar cookies para poder dejar seleccionado el ultimo horario que se accedio.
-- [ ] (Parser) Extraer los indices de las columnas del layout y guardar en alguna estructura de
-  datos seria mejor.
+FIX:
+- [ ] Parseado de nombres de docentes cuando hay mas de un docente (que verga lgmt)
+- [ ] Parseado de emails de docentes cuando hay mas de un docente
+- [ ] Carga del calendario que siempre falla
+- [ ] Error de tiempo de server (igual para JWT no deberia importar porque se firma con el
+  tiempo actual del server, no del user, pero da muchos problemas con el tema de logs, tambien
+  de actualizacion de los excel y demas).
+- [ ] El tema del tiempo de sesiones hacer bien como se debe, ahora era una solucion temporal
+  nomas la que hay
+
+TODO: 
+- [ ] MIL MILLONES DE TESTS "end to end" completos
+- [ ] Agregar descarga directa desde url de excel para el menu de sync
+- [ ] Alguna manera de ver estadisticas como cantidad de usuarios, cantidad de conexiones e
+  inicios de sesion realizados, etc.
+- [ ] Servicios que corren de manera periodica, como la eliminacion de versiones demasiado
+  viejas del excel y sus respectivos horarios.
 
 FEATURES:
-- [ ] Ver fechas de revision de los examenes en las vistas de informacion
-- [ ] Exportar a pdf o imagen los horarios (no deberia se dificil hacer con algo de custom JS
-  nomas).
-- [?] Recuperacion de contrasena de usuario (pero involucra contar con email de recuperacion y
-  hacer mandar mails, asi que posiblemente no al final)
-- [?] Update materias de horario existente
+- [ ] Seccion de comentarios y sugerencias
+
+REFACTOR: 
+- [ ] Todo el frontend, uso de css y demas.
+  Que paja, eso no quiero hacer yo la verdad
+- [?] Parseado de manera directa de las horas "desde - hasta" por cada materia (capaz que pued
+  servir de algo hacer eso)
+- [ ] Re-revisar la arquitectura del parseo de excels, no me convence para nada la verdad.
+- [ ] Revisar el uso excesivo y directo de models desde la DB
+- [ ] Ver si implementar manejo de sesiones a la antigua.
+
+Para aumentar el tiempo de sesion puedo usar un sistema con PASETO y agregar un campo de
+validacion al usuario, el cual "epoch" le llama chatgpt, el cual es una version que cuando se
+cambia de contrasena por ejemplo se cambia la version del epoch.
+Si las versiones no concuerdan con la BD entonces se invalida el token y la sesion no se
+permite.
+
+Esto es facil y bastante trivial incluso para sqlite en terminos de rendimiento, ademas de que
+permite tener varias sesiones por usuario y va a ser super facil de implementar.
+
+[posible libreria Paseto](https://github.com/aidantwoods/go-paseto)
+
+# Desarrollo en equipo
+
+[notas sobre como llevar el proyecto](poliplanner_org.md)
 
 # DISCIPLINA
 

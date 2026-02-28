@@ -1,4 +1,4 @@
-# Cosas que descargar con instalacion desde 0
+# Cosas que descargar con instalacion
 - neovim
 - ripgrep
 - fd
@@ -15,11 +15,5 @@
 - lynx
 - grim (screenshots de codigo)
 - maim (screenshots de i3)
-
-# Cosas de terminal
-
-**Terminal con markdown**
-- _Diapositivas_:
-  slides(go) + perl-graph-easy (para usar con vim hacer ':.!graph-easy')
-- _lector_:
-  glow
+- graph-easy (graficos ascii)
+- presenterm (diapositivas en terminal)

@@ -1,3 +1,6 @@
+Librerias que puedo usar:
+- https://atomiks.github.io/tippyjs/
+
 # Todo  
 - Anadir dialogos de error
 - Anadir una funcion para abrir el explorador de archivos y seleccionar la carpeta
